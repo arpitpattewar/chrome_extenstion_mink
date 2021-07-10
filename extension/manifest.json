@@ -6,12 +6,11 @@
   "icons": {
   },
   "permissions": [
-    "webNavigation"
   ],
   "content_scripts":[
     {
       "matches":[
-        "https://www.youtube.com/watch?v=*"
+        "https://www.youtube.com/*"
       ],
       "exclude_globs":[
       ],
@@ -26,6 +25,5 @@
       ]
     }
   ],
-  "web_accessible_resources": [
-  ]
+  "web_accessible_resources": []
 }
