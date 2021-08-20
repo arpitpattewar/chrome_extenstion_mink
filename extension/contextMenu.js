@@ -1,4 +1,5 @@
-const contextMenuId = "myMenuId";
+  
+const contextMenuId = "minkMenu";
 
 function openLink(info,tab) {
   if (info.menuItemId !== contextMenuId) {
@@ -16,7 +17,7 @@ function openLink(info,tab) {
 }
 chrome.contextMenus.create({
   title: "open with player", 
-  contexts:["link","page"], 
+  contexts:["link","page"],
   documentUrlPatterns: ["https://www.youtube.com/*"],
   id: contextMenuId
 });
