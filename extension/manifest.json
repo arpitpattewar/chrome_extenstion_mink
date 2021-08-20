@@ -5,8 +5,15 @@
   "manifest_version":2,
   "icons": {
   },
-  "permissions": [
-  ],
+    "permissions": [
+      "contextMenus"
+     ],
+    "background": { 
+      "scripts": ["script.js"]
+    },
+    "icons":{
+      "16": "yt/logo.png"
+    },
   "content_scripts":[
     {
       "matches":[
