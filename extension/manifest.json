@@ -3,16 +3,16 @@
   "version":"0.1",
   "description":"For better video watching experience on voice driven video player. Please write to feedbackfornammi.com for any bug. Big thanks to Youtube.com !!",
   "manifest_version":2,
-  "icons": {
-  },
-  "permissions": [
-  ],
+    "permissions": [
+      "contextMenus"
+     ],
+     "background": { 
+      "service_worker": "contextMenu.js"
+    },
   "content_scripts":[
     {
       "matches":[
         "https://www.youtube.com/*"
-      ],
-      "exclude_globs":[
       ],
       "run_at":"document_idle",
       "js":[
@@ -24,6 +24,5 @@
         "yt/main.css"
       ]
     }
-  ],
-  "web_accessible_resources": []
+  ]
 }
